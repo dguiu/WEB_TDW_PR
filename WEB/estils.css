@@ -30,7 +30,7 @@ border-radius: 0 6px 0 0;
 		font-family:"Arial"; 
 		font-size:30px;}
 
-#menu { float: right;
+#menu { float: center;
 		width: 100%;
 		list-style: none;
 		background: #ee6f1b;

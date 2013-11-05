@@ -5,6 +5,18 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="ELIES MARTOS" content="Hege Refsnes">
 		<link href="estils.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			function ver(n) {
+         		document.getElementById("subseccion"+n).style.display="block";
+        	}
+			function ocultar(n) {
+         		document.getElementById("subseccion"+n).style.display="none";       		
+         	}
+         	function borrartexto() {
+         		document.formu.usuari.value = "";
+         		document.formu.pass.value = "";
+         	}
+		</script>
 		<table align = "center" cellpadding = "10">
 			<tr> 
 				<td> <img src="logo.png" alt="maxfunlogo" width="228" height ="152" ></td>
@@ -31,7 +43,18 @@
 				<li><a href="d.accesoris.php"> ACCESSORIS I MAQUILLATGE </a></li>
 				<li ><a href="d.decoracio.php"> DECORACIÓ DE FESTES </a></li>
 				<li><a href="d.terror.php"> ESPECIAL TERROR </a></li>
-				<li><a href="login.php"> LOGIN </a></li>
+				<li onmouseover="ver(1)" onmouseout="ocultar(1);borrartexto();"><a id="pulsa" href="" > LOGIN </a>
+					<div id="subseccion1">
+						<form name="formu" action="comprovarlogin.php" method="get">
+							<table align="center">
+								<tr><td id="usu1">Usuari:</td><td><input name="usuari"></td></tr>
+								<tr><td id="cont1">Contrasenya:</td><td><input name="pass" type="password"></td></tr>
+								<tr><td colspan="2"><input name="enviar" type="submit" value="Loguejar-se">
+								<input name="reset" type="reset" value="reset"></td></tr>
+							</table>
+						</form>
+					</div>
+				</li>
 			</ul>
 		</div>
 		<!--<table align="center" cellpadding="10">

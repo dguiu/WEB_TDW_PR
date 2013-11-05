@@ -45,6 +45,20 @@ border-radius: 0 6px 0 0;
 		color: #fbfafa;
 	}
 
+#menu a:hover {
+		background-color: #434343;
+	}
+
+.seccio1 { display: none;}
+
+#subseccion1 { position: absolute;
+		 	   display: none;
+		       top: 295px;
+		       left: 1050px;
+		       background: #ee6f1b;
+		       color: #fbfafa;
+			}
+
 /*a.nounderline:link   
 {   
  text-decoration:none; color: #fbfafa;  

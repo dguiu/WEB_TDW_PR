@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php include 'capcelera.php'; ?>
+		<title>maxfun</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="ELIES MARTOS" content="Hege Refsnes">
+		<link href="estils.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<form method=get action="">
@@ -20,6 +23,5 @@
 			</table>
 		</form>
 		<div align = "center"><a href="index.php" >HOME</a></div>
-		<?php include 'peu.php'; ?>
 	</body>
 </html>
